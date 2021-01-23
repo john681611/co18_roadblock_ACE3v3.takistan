@@ -54,31 +54,3 @@ class Params
 	};
 
 };
-
-class ACEX_Fortify_Presets {
-    class myMissionObjects {
-        displayName = "US Fortifactions";
-        objects[] = {
-			{"Land_Fort_Watchtower_EP1", 50},
-			{"Land_fort_artillery_nest_EP1", 50},
-			{"Land_fort_rampart_EP1", 50},
-			{"Land_BagBunker_Small_F", 50},
-			{"Land_BagBunker_Large_F", 50},
-			{"Land_CamoNetVar_NATO_EP1", 50},
-			{"Land_CamoNetB_NATO_EP1", 50},
-			{"Land_HBarrier_3_F", 50},
-			{"Land_HBarrier_Big_F", 50},
-			{"Land_HBarrierWall4_F", 50},
-			{"Land_HBarrierTower_F", 50},
-			{"Land_Razorwire_F", 50},
-			{"Land_BagFence_Long_F", 50},
-			{"Land_BagFence_Round_F", 50},
-			{"Hedgehog",50},
-			{"Land_CncBarrier_F", 50},
-			{"Land_CncBarrierMedium_F", 50},
-			{"Land_Camping_Light_F", 50},
-			{"Land_TentLamp_01_suspended_F", 50},
-			{"Land_PortableLight_double_F", 50}
-        };
-    };
-};
