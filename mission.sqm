@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=45;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={3836.2021,248.73949,4371.1211};
-		dir[]={0.86350548,-0.49580246,-0.092916101};
-		up[]={0.49297729,0.86841905,-0.053046901};
-		aside[]={-0.10699287,-2.3987013e-008,-0.99429733};
+		pos[]={3682.0061,369.60593,4165.4082};
+		dir[]={-0.58921051,-0.2348689,-0.77315515};
+		up[]={-0.14238733,0.97201788,-0.18683763};
+		aside[]={-0.79539621,-8.851639e-007,0.60616338};
 	};
 };
 binarizationWanted=0;
@@ -316,7 +316,6 @@ class ScenarioData
 	author="Mike64";
 	disabledAI=1;
 	respawn=3;
-	respawnDelay=120.00001;
 	class Header
 	{
 		gameType="Coop";
@@ -334,6 +333,25 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -394,25 +412,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
