@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3841.6836,339.91962,3671.3655};
-		dir[]={-0.058278032,-0.1161007,-0.99158436};
-		up[]={-0.0068150931,0.99322492,-0.11594827};
-		aside[]={-0.99833018,-2.017292e-006,0.058680318};
+		pos[]={3816.5569,355.7124,3672.8811};
+		dir[]={0.34397438,-0.20858373,-0.91559917};
+		up[]={0.073371455,0.97799051,-0.19530253};
+		aside[]={-0.93618929,-9.8987948e-007,-0.35170302};
 	};
 };
 binarizationWanted=0;
@@ -57,7 +57,6 @@ addons[]=
 	"A3_Soft_F_Quadbike_01",
 	"A3_Modules_F_Tacops",
 	"A3_Modules_F_Effects",
-	"acex_fortify",
 	"A3_Missions_F_Oldman",
 	"UK3CB_Factions_TKP_B",
 	"A3_Structures_F_Walls",
@@ -71,7 +70,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=35;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -259,61 +258,54 @@ class AddonsMetaData
 		};
 		class Item27
 		{
-			className="acex_fortify";
-			name="acex_fortify";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item28
-		{
 			className="A3_Missions_F_Oldman";
 			name="Arma 3 Old Man - Playable Content";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="UK3CB_Factions_TKP";
 			name="3CB Factions - TKP";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_common";
 			name="ACE3 - Common";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item32
 		{
 			className="UK3CB_Factions_TKC";
 			name="3CB Factions - TKC";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="UK3CB_Factions_CHC";
 			name="3CB Factions - CHC";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
@@ -16733,7 +16725,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Roadblock Duty V3";
+		briefingName="Roadblock Duty V4Beta";
 		overviewText="Remake of an ARMA2 classic ( by Sacha Ligthert )";
 		timeOfChanges=7200;
 		startWeather=0;
@@ -16752,7 +16744,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=107;
+		items=106;
 		class Item0
 		{
 			dataType="Marker";
@@ -22457,96 +22449,6 @@ class Mission
 		};
 		class Item74
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3851.5259,334.02725,3628.7439};
-			};
-			id=687;
-			type="acex_fortify_setupModule";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="acex_fortify_setupModule_AddToolItem";
-					expression="_this setVariable ['AddToolItem',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="acex_fortify_setupModule_Budget";
-					expression="_this setVariable ['Budget',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=-1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="acex_fortify_setupModule_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="acex_fortify_setupModule_Preset";
-					expression="_this setVariable ['Preset',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="myMissionObjects";
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item75
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -22617,7 +22519,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item76
+		class Item75
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22633,7 +22535,7 @@ class Mission
 			type="B_Quadbike_01_F";
 			atlOffset=1.7579346;
 		};
-		class Item77
+		class Item76
 		{
 			dataType="Marker";
 			position[]={3848.3867,340.18469,3590.1487};
@@ -22641,7 +22543,7 @@ class Mission
 			type="Empty";
 			id=741;
 		};
-		class Item78
+		class Item77
 		{
 			dataType="Marker";
 			position[]={3851.7402,345.22623,3557.1267};
@@ -22649,7 +22551,7 @@ class Mission
 			type="Empty";
 			id=742;
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Trigger";
 			position[]={3849.2549,343.91956,3577.8899};
@@ -22668,7 +22570,7 @@ class Mission
 			type="EmptyDetectorArea10x10";
 			atlOffset=1.9199829;
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Trigger";
 			position[]={3849.7,353.04141,3544.2339};
@@ -22687,7 +22589,7 @@ class Mission
 			type="EmptyDetectorArea10x10";
 			atlOffset=5.0620117;
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Trigger";
 			position[]={3847.489,336.77435,3606.854};
@@ -22706,7 +22608,7 @@ class Mission
 			type="EmptyDetectorArea10x10";
 			atlOffset=-0.88299561;
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22723,7 +22625,7 @@ class Mission
 			type="Sign_Checkpoint_EP1";
 			atlOffset=-9.1552734e-005;
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Object";
 			class PositionInfo
@@ -22783,7 +22685,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Group";
 			side="West";
@@ -22875,7 +22777,7 @@ class Mission
 			};
 			id=757;
 		};
-		class Item85
+		class Item84
 		{
 			dataType="Group";
 			side="West";
@@ -22966,7 +22868,7 @@ class Mission
 			};
 			id=760;
 		};
-		class Item86
+		class Item85
 		{
 			dataType="Group";
 			side="West";
@@ -23058,7 +22960,7 @@ class Mission
 			};
 			id=761;
 		};
-		class Item87
+		class Item86
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23098,7 +23000,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item88
+		class Item87
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23138,7 +23040,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item89
+		class Item88
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23178,7 +23080,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item90
+		class Item89
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23218,7 +23120,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item91
+		class Item90
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23258,7 +23160,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item92
+		class Item91
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23298,7 +23200,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item93
+		class Item92
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23338,7 +23240,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item94
+		class Item93
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23378,7 +23280,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item95
+		class Item94
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23418,7 +23320,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item96
+		class Item95
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -23429,7 +23331,7 @@ class Mission
 			id=772;
 			type="ACE_ModuleLSDVehicles";
 		};
-		class Item97
+		class Item96
 		{
 			dataType="Group";
 			side="Civilian";
@@ -23521,7 +23423,7 @@ class Mission
 			};
 			id=773;
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23581,7 +23483,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item99
+		class Item98
 		{
 			dataType="Group";
 			side="Civilian";
@@ -23637,7 +23539,7 @@ class Mission
 			id=778;
 			atlOffset=-6.1035156e-005;
 		};
-		class Item100
+		class Item99
 		{
 			dataType="Group";
 			side="Civilian";
@@ -23691,7 +23593,7 @@ class Mission
 			};
 			id=784;
 		};
-		class Item101
+		class Item100
 		{
 			dataType="Trigger";
 			position[]={5069.5088,301.07999,6855.8618};
@@ -23710,7 +23612,7 @@ class Mission
 			id=786;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item102
+		class Item101
 		{
 			dataType="Trigger";
 			position[]={5392.6768,140.19728,6261.3921};
@@ -23729,7 +23631,7 @@ class Mission
 			id=791;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item103
+		class Item102
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23744,7 +23646,7 @@ class Mission
 			id=794;
 			type="Land_JumpTarget_F";
 		};
-		class Item104
+		class Item103
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23760,11 +23662,11 @@ class Mission
 			id=795;
 			type="Land_JumpTarget_F";
 		};
-		class Item105
+		class Item104
 		{
 			dataType="Trigger";
 			position[]={2631.4109,197.91281,5090.208};
-			angle=5.8636246;
+			angle=5.8636241;
 			class Attributes
 			{
 				condition="call{{_x getVariable [""ace_captives_isHandcuffed"", false]} count thislist > 0}";
@@ -23780,7 +23682,7 @@ class Mission
 			id=796;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item106
+		class Item105
 		{
 			dataType="Object";
 			class PositionInfo
