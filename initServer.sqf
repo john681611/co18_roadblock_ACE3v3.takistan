@@ -26,7 +26,6 @@ RBD_CLEAR = 0;
 pvHint = "";
 RBD_DONE = 1;
 
-[] execVM "fn_advancedTowingInit.sqf";
 
 // Lets rock!
 execVM "mainloop.sqf";

@@ -1,5 +1,5 @@
 // https://community.bistudio.com/wiki/Description.ext
-
+#include "R3F_LOG\desc_include.h"
 class Header
 {
  gameType = COOP;
@@ -15,7 +15,7 @@ showWatch	= 1;
 aiKills		= 0;
 debriefing	= 1;
 author = "Sacha Ligthert [INF EDIT]";
-onLoadName = "Roadblock Duty V3 (ACE3)";
+onLoadName = "Roadblock Duty V4Beta (ACE3)";
 onLoadMission = "Hold the Roadblock and prevent insurgents from escaping.";
 loadScreen = "roadblock_duty.paa";
 overviewPicture = "roadblock_duty.paa";

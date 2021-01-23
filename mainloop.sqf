@@ -201,6 +201,7 @@ while { _round != rounds } do {
 		} else {
 			_grp = [getPos _veh, EAST,_units] call BIS_fnc_spawnGroup;
 		};
+		_veh setVariable ["spawnedVeh", true, true];
 		_grp addVehicle _veh;
 		{ _x moveInAny  _veh; } forEach units _grp;
 
@@ -208,7 +209,7 @@ while { _round != rounds } do {
 
 	};
 
-	_wait = 10;//(30 + (random 390));
+	_wait = (30 + (random 390));
 	if (debug == 1) then {
 		hintSilent format["Chance: %1; Action: %2; Wait: %3; Round: %4/%5; Vehicle: %6;",_chance,_rnd_action,_wait,_round,rounds,_veh_of_choice];
 		diag_log format["Chance: %1; Action: %2; Wait: %3; Round: %4/%5; Vehicle: %6;",_chance,_rnd_action,_wait,_round,rounds,_veh_of_choice];
