@@ -1,0 +1,84 @@
+// https://community.bistudio.com/wiki/Description.ext
+
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 18;
+};
+
+
+disabledAI = 1;
+ShowGPS = 1;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+author = "Sacha Ligthert [INF EDIT]";
+onLoadName = "Roadblock Duty V3 (ACE3)";
+onLoadMission = "Hold the Roadblock and prevent insurgents from escaping.";
+loadScreen = "roadblock_duty.paa";
+overviewPicture = "roadblock_duty.paa";
+enableDebugConsole = 1;
+
+class Params
+{
+
+	class DayTime //paramsArray[0]
+	{
+		title = "Starting Time";
+		values[] = {6, 13, 17, 18, 20, 1};
+		texts[] = {"0630HRS", "1330HRS", "1730HRS", "1830HRS", "2030HRS", "0130HRS"};
+		default = 17;
+	};
+	class TimeAccel // paramsArray[1]
+	{
+		title = "Time Acceleration (irl:in-game)";
+		values[] = {1,6,12,24,60};
+		texts[] = {"None","1:6","1:12","1:24","1:60"};
+		default = 6;
+	};
+	class Rounds //paramsArray[2]
+	{
+		title = "Roadblocks to complete";
+		values[] = {2,10,25,50,75,100};
+		texts[] = {"2","10","25","50","75","100"};
+		default = 25;
+	};
+	class Debug //paramsArray[3]
+	{
+		title = "Debug";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 0;
+	};
+
+};
+
+class ACEX_Fortify_Presets {
+    class myMissionObjects {
+        displayName = "US Fortifactions";
+        objects[] = {
+			{"Land_Fort_Watchtower_EP1", 50},
+			{"Land_fort_artillery_nest_EP1", 50},
+			{"Land_fort_rampart_EP1", 50},
+			{"Land_BagBunker_Small_F", 50},
+			{"Land_BagBunker_Large_F", 50},
+			{"Land_CamoNetVar_NATO_EP1", 50},
+			{"Land_CamoNetB_NATO_EP1", 50},
+			{"Land_HBarrier_3_F", 50},
+			{"Land_HBarrier_Big_F", 50},
+			{"Land_HBarrierWall4_F", 50},
+			{"Land_HBarrierTower_F", 50},
+			{"Land_Razorwire_F", 50},
+			{"Land_BagFence_Long_F", 50},
+			{"Land_BagFence_Round_F", 50},
+			{"Hedgehog",50},
+			{"Land_CncBarrier_F", 50},
+			{"Land_CncBarrierMedium_F", 50},
+			{"Land_Camping_Light_F", 50},
+			{"Land_TentLamp_01_suspended_F", 50},
+			{"Land_PortableLight_double_F", 50}
+        };
+    };
+};
